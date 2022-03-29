@@ -11,15 +11,12 @@ class BitString
 private:
 	long a;
 	long b;
-	string ab;
 public:
-	string getA() const;
-	string getB() const;
-	void setA(string a_1);
-	void setB(string a_1);
-	string getAB() { return ab; }
-	void setAB(string value) { ab = value; }
-	bool init(long a1, long b1);
+	long getA() const { return a; };
+	long getB() const { return b; };
+	void setA(long value) { a = value; }
+	void setB(long value) { b = value; }
+	void init(long a1, long b1);
 	string toString();
 	void read();
 	void display();

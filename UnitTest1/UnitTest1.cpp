@@ -11,6 +11,10 @@ namespace UnitTest1
 	public:
 		TEST_METHOD(TestMethod1)
 		{
+			BitString q;
+			q.setA(1);
+			long expected = q.getA();
+			Assert::AreEqual(expected, 1l);
 		}
 	};
 }
